@@ -84,12 +84,12 @@ After power up, by default the ADCC operates in basic mode. Switch (S2) on the b
 </tbody>
 </table>
 
-he ADCC module of PIC18F25Q10 MCU periodically acquires analog data and process it to equivalent digital data. The timer0 module acts as a source of trigger to initiate the ADC auto conversion. The interval for the timer can be varied to achieve different ADC sampling frequencies. In case of basic, average and burst-average modes, the sampling frequency is set to 100Hz. Whereas in case of low-pass filter mode, the interval is selected to 1msec to generate a sampling frequency of 1KHz.
+The ADCC module of PIC18F47Q10 MCU periodically acquires analog data and process it to equivalent digital data. The timer0 module acts as a source of trigger to initiate the ADC auto conversion. The interval for the timer can be varied to achieve different ADC sampling frequencies. In case of basic, average and burst-average modes, the sampling frequency is set to 100Hz. Whereas in case of low-pass filter mode, the interval is selected to 1msec to generate a sampling frequency of 1KHz.
 
 In Low-pass filter mode, cut-off frequency is calculated as below: 
 
 <p align="center">
-  <img width=750 height=auto src="images/Formula.jpg">
+  <img width=200 height=auto src="images/Formula.jpg">
   <br><strong><br>
 </p>
 
@@ -297,41 +297,41 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
 * By default, the ADCC is configured in basic mode. No computational feature is enabled and the raw data is displayed in the terminal window.
 
 <p align="center">
-  <img width=750 height=auto src="images/BasicTerminal.jpg">
+  <img width=400 height=auto src="images/BasicTerminal.jpg">
   <br><strong><br>
 </p>
 
 * Press switch (S2) on the board, the ADCC mode changes from basic to average mode. In average mode, the ADCC module is configured to accumulate 16 samples and the averaged value present in the ADFLTR register is displayed on the terminal window. In this mode, setpoint is set at 511, upper threshold to +200 and lower threshold to -200. So, when the ADC value goes below 311 (511-200) or when it goes above 711 (511+200), corresponding error message is displayed.
 
 <p align="center">
-  <img width=750 height=auto src="images/Terminal1.jpg">
+  <img width=400 height=auto src="images/Terminal1.jpg">
   <br><strong><br>
 </p>
 
 <p align="center">
-  <img width=750 height=auto src="images/Terminal2.jpg">
+  <img width=400 height=auto src="images/Terminal2.jpg">
   <br><strong><br>
 </p>
 
 <p align="center">
-  <img width=750 height=auto src="images/Terminal3.jpg">
+  <img width=400 height=auto src="images/Terminal3.jpg">
   <br><strong><br>
 </p>
 
 * Press switch (S2), the ADCC mode switches from average to burst average mode. In burst average mode, the ADCC module is configured to accumulate 16 samples sequentially (at a single stretch) for each auto conversion trigger. The averaged value of accumulated samples (present in ADFLTR register) is displayed on the terminal window. The setpoint, upper threshold and lower threshold are same as in average mode.
 
 <p align="center">
-  <img width=750 height=auto src="images/BurstAvg1.jpg">
+  <img width=400 height=auto src="images/BurstAvg1.jpg">
   <br><strong><br>
 </p>
 
 <p align="center">
-  <img width=750 height=auto src="images/BurstAvg2.jpg">
+  <img width=400 height=auto src="images/BurstAvg2.jpg">
   <br><strong><br>
 </p>
 
 <p align="center">
-  <img width=750 height=auto src="images/BurstAvg3.jpg">
+  <img width=400 height=auto src="images/BurstAvg3.jpg">
   <br><strong><br>
 </p>  
 
@@ -344,12 +344,12 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
 </p>
 
 * Configuring Data Streamer and Oscilloscope:
-  ** Select the Data Stream Configuration File and load the file. The file is available in firmware folder.
-  ** ADC result (ADRES) and ADC filter values (ADFLTR) are outputted
-  ** Connect ADRES to channel 1 and ADFLTR to channel 2 of the oscilloscope
+  * Select the Data Stream Configuration File and load the file. The file is available in firmware folder.
+  * ADC result (ADRES) and ADC filter values (ADFLTR) are outputted
+  * Connect ADRES to channel 1 and ADFLTR to channel 2 of the oscilloscope
  
 <p align="center">
-  <img width=750 height=auto src="images/Oscilloscope.png">
+  <img width=500 height=auto src="images/Oscilloscope.png">
   <br><strong><br>
 </p> 
 
@@ -363,21 +363,21 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
 * The ADCC attenuates the high frequency noise and allows only the DC signal as shown below. (deltaY of 40.84 = 200mV)
 
 <p align="center">
-  <img width=750 height=auto src="images/graph2.jpg">
+  <img width=500 height=auto src="images/graph2.jpg">
   <br><strong><br>
 </p> 
 
 With 100 Hz noise frequency, the amplitude of the noise in the output signal has reduced to 41.6mV(peak-peak). The gain has reduced to -13.63 dB. (20 log ((8.521 * 5 / 1024)/200mV ))
 
 <p align="center">
-  <img width=750 height=auto src="images/graph3.jpg">
+  <img width=500 height=auto src="images/graph3.jpg">
   <br><strong><br>
 </p> 
 
 With 210 Hz noise frequency (10 times the cut off frequency), the amplitude of the noise in the output signal has reduced to 18.5mV(peak-peak). The gain has reduced to -20.6 dB.(20 log ((3.803 * 5 / 1024)/200mV ))
 
 <p align="center">
-  <img width=750 height=auto src="images/graph4.jpg">
+  <img width=500 height=auto src="images/graph4.jpg">
   <br><strong><br>
 </p> 
 
