@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-adc-computation-modes-mplab",
+        "version": "1.0.0",
+        "displayName": "ADC With Computational Modes (MPLAB X Project)",
+        "projectName": "pic18f47q10-adc-computation-modes-mplab",
+        "shortDescription": "Microchip offers a 10-bit ADCC module in PIC18 Q10 family microcontrollers. This example highlights the basic, average, burst average and low-pass filter computation modes of ADC using PIC18F47Q10 MCU and Curiosity High Pin Count development board.",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MPLAB X IDE",
+            "semverRange": ">=5.40"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "XC8",
+				"semverRange": "^2.30"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "^1.8.154"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=4.0.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,40 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "PIC18F47Q10",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
             "",
             [
-               "Peripherals", ""
+               "Peripherals", "TCA"
             ],
             [
-               "Peripherals", ""
-            ]            			
+               "Peripherals", "ADCC"
+            ],
+            [
+               "Peripherals", "HLT"
+            ],
+            [
+               "Peripherals", "USART"
+            ]              			
         ],
         "peripherals": [
-            "",""
+            "TCA","ADCC","HLT","USART"
         ],
         "keywords": [
-            "",
-            ""			
+            "PIC18F47Q10",
+            "MPLAB X",
+            "MCC",
+			"Timer",
+			"Data Visualizer",
+			"ADCC",
+			"Average",
+			"Burst Average",
+			"Low Pass Filter",
+			"Curiosity HPC Board"
         ],
 		"additionalData": {
 			"longDescription": {

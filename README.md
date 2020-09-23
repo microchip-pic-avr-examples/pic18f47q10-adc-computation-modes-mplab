@@ -89,7 +89,7 @@ The ADCC module of PIC18F47Q10 MCU periodically acquires analog data and process
 In Low-pass filter mode, cut-off frequency is calculated as below: 
 
 <p align="center">
-  <img width=200 height=auto src="images/Formula.jpg">
+  <img width=275 height=auto src="images/Formula.jpg">
   <br><strong><br>
 </p>
 
