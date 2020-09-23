@@ -161,7 +161,7 @@ Make sure that the latest software libraries are installed. The demo/example use
 * [MPLAB® X](https://www.microchip.com/mplab/mplab-x-ide) (v5.40)
 * [XC8 compiler](https://www.microchip.com/mplab/compilers) (v2.30)
 * [MPLAB® Code Configurator](https://www.microchip.com/mplab/mplab-code-configurator) (v4.0.1)
-* [DFP Pack](https://packs.download.microchip.com/) (v1.5.82)
+* [DFP Pack](https://packs.download.microchip.com/) (v1.8.154)
 * [Standalone Data Visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer) (v2.20.674)
  
 ## Hardware Used
