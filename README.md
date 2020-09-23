@@ -5,6 +5,10 @@
 
 The PIC18FxxQ10 family of devices are equipped with a 10-bit ADC with Computation (ADCC) automating Capacitive Voltage Divider (CVD) techniques for advanced touch sensing, averaging, filtering, oversampling and performing automatic threshold comparisons.
 
+### Demonstration Video 
+
+[![Demo Video](https://img.youtube.com/vi/rjd50szezx4/0.jpg)](https://youtu.be/rjd50szezx4)
+
 ### Features of ADCC 
 
 * Thirty-five external channels and four internal analog channels
@@ -16,8 +20,6 @@ The PIC18FxxQ10 family of devices are equipped with a 10-bit ADC with Computatio
   * Averaging, filter calculations, oversampling and threshold comparison
 
 These MCUs also contains hardware limit timer (HLT) which is enhanced version of timer2 with asynchronous operation and reset, start or stop capability from external/internal signal sources. The HLT can be operated in various modes such as one shot, monostable, roll over pulse mode etc.
-
-[![Demo Video](images/HardwareSetup.jpg)](https://youtu.be/rjd50szezx4)
 
 ## Description 
 
