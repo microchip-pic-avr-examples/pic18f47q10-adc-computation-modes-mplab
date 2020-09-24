@@ -178,8 +178,8 @@ Make sure that the latest software libraries are installed. The demo/example use
 * Configure the serial port for communication with the Curiosity High Pin Count (HPC) Development Board.
 * Set the baud rate to 230400, parity to none and stop bits to 1.
 * Ensure the DTR option is checked and both RTS and Open Terminal options are unchecked.
-* Configure data streamer for interfacing Oscilloscope window with the serial port control panel. Data streamer configuration **(data-streamer-config.txt) ** file is available in example firmware folder.
-* Configure Oscilloscope module visualizes data values in real-time.
+* Configure data streamer for interfacing Oscilloscope window with the serial port control panel. Data streamer configuration **(data-streamer-config.txt)** file is available in example firmware folder.
+* Configure Oscilloscope module for visualize the data values in real-time.
 
   **NOTE**: Refer Data Visualizer user guide for more information.
 
