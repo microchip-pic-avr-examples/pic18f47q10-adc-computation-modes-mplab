@@ -280,6 +280,62 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
 * Connect the Curiosity High Pin Count (HPC) Development Board to a host computer (PC) using standard micro B USB cable for power up the board.
 * Connect the USB UART click board to a host computer (PC) using standard micro B USB cable for transmit UART data on terminal.  
 * Connect function generator’s output to pin RA1 (on header J8) of curiosity HPC board. Establish common ground reference for both function generator and curiosity HPC board.
+* The following table shows port pins of PIC18F47Q10 MCU configured in this application along with its respective signal names
+
+<table>
+<thead>
+<tr>
+<th>SL. No.</th>
+<th>PIC18F47Q10</th>
+<th>Signal</th>
+<th>Board</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>RA0/AN0</td>
+<td>Potentiometer</td>
+<td>Curiosity HPC Board</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RA1/AN1</td>
+<td>Analog Input</td>
+<td>Curiosity HPC Board</td>
+</tr>
+<tr>
+<td>3</td>
+<td>RA4</td>
+<td>LED D2</td>
+<td>Curiosity HPC Board</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RA5</td>
+<td>LED D3</td>
+<td>Curiosity HPC Board</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RC5</td>
+<td>Switch S2</td>
+<td>Curiosity HPC Board</td>
+</tr>
+<tr>
+<td>6</td>
+<td>RC6/TX</td>
+<td>-42.0</td>
+<td>USB UART Click</td>
+</tr>
+<tr>
+<td>7</td>
+<td>RC7/RX</td>
+<td>-48.1</td>
+<td>USB UART Click</td>
+</tr>
+</tbody>
+</table>
 
 <p align="center">
   <img width=750 height=auto src="images/HardwareSetup.jpg">
