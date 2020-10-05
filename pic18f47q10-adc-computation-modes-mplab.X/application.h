@@ -37,11 +37,15 @@ volatile bool lpfModeInit = false;
 
 // set the analog channel for ADCC
 void ADCC_SetChannel(adcc_channel_t channel);
-
+void ADCC_Initialize_BasicMode(void);
+void ADCC_Initialize_AverageMode(void);
+void ADCC_Initialize_BurstAverageMode(void);
+void ADCC_Initialize_LowPassFilterMode(void);
 // application task
 void ApplicationTask(void);
 
-
+void ADCUserInterrupt(void);
+void TMR4UserInterrupt(void);
 #ifdef	__cplusplus
 }
 #endif

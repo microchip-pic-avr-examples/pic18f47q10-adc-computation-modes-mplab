@@ -13,11 +13,11 @@
   @Description
     This source file provides implementations for driver APIs for ADCC.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F47Q10
         Driver Version    :  2.1.4
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above
+        Compiler          :  XC8 2.30 and above
         MPLAB             :  MPLAB X 5.40
 */
 
@@ -109,92 +109,6 @@ void ADCC_Initialize(void)
     PIE1bits.ADTIE = 1;
 
     ADCC_SetADTIInterruptHandler(ADCC_DefaultInterruptHandler);
-}
-
-void ADCC_Initialize_BasicMode(void)
-{
-    // ADCRS 0; ADMD Basic_mode; ADACLR disabled; ADPSIS ADRES; 
-    ADCON2 = 0x00;
-    // ADCALC First derivative of Single measurement; ADTMD enabled; ADSOI ADGO not cleared; 
-    ADCON3 = 0x07;
-    // ADACT TMR0; 
-    ADACT = 0x02;
-    // ADCS FOSC/64; 
-    ADCLK = 0x1F;
-    // ADGO stop; ADFM right; ADON enabled; ADCONT disabled; ADCS FOSC/ADCLK; 
-    ADCON0 = 0x84;
-}
-
-void ADCC_Initialize_AverageMode(void)
-{
-    // ADLTHL 56; 
-    ADLTHL = 0x38;
-    // ADLTHH 255;      // Lower threshold set to -200 diff from setpoint 
-    ADLTHH = 0xFF;
-    // ADUTHL 200; 
-    ADUTHL = 0xC8;
-    // ADUTHH 0;        // Upper threshold set to +200 diff from setpoint
-    ADUTHH = 0x00;
-    // ADSTPTL 255; 
-    ADSTPTL = 0xFF;
-    // ADSTPTH 1;       // Setpoint set to 511
-    ADSTPTH = 0x01;
-    // ADRPT 16; 
-    ADRPT = 0x10;
-    // ADCRS 4; ADMD Average_mode; ADACLR disabled; ADPSIS ADRES; 
-    ADCON2 = 0x42;
-    // ADCALC Actual result vs setpoint; ADTMD ADERR > ADLTH and ADERR < ADUTH; ADSOI ADGO not cleared; 
-    ADCON3 = 0x13;
-    // ADACT TMR0; 
-    ADACT = 0x02;
-    // ADCS FOSC/64; 
-    ADCLK = 0x1F;
-    // ADGO stop; ADFM right; ADON enabled; ADCONT disabled; ADCS FOSC/ADCLK; 
-    ADCON0 = 0x84;    
-}
-
-void ADCC_Initialize_BurstAverageMode(void)
-{
-    // ADLTHL 56; 
-    ADLTHL = 0x38;
-    // ADLTHH 255;      // Lower threshold set to -200 diff from setpoint 
-    ADLTHH = 0xFF;
-    // ADUTHL 200; 
-    ADUTHL = 0xC8;
-    // ADUTHH 0;        // Upper threshold set to +200 diff from setpoint
-    ADUTHH = 0x00;
-    // ADSTPTL 255; 
-    ADSTPTL = 0xFF;
-    // ADSTPTH 1;       // Setpoint set to 511
-    ADSTPTH = 0x01;
-    // ADRPT 16; 
-    ADRPT = 0x10;
-    // ADCRS 4; ADMD Burst_average_mode; ADACLR disabled; ADPSIS ADRES; 
-    ADCON2 = 0x43;
-    // ADCALC Actual result vs setpoint; ADTMD ADERR > ADLTH and ADERR < ADUTH; ADSOI ADGO not cleared; 
-    ADCON3 = 0x13;
-    // ADACT TMR0; 
-    ADACT = 0x02;
-    // ADCS FOSC/64; 
-    ADCLK = 0x1F;
-    // ADGO stop; ADFM right; ADON enabled; ADCONT disabled; ADCS FOSC/ADCLK; 
-    ADCON0 = 0x84;
-}
-
-void ADCC_Initialize_LowPassFilterMode(void)
-{
-    // ADRPT 16; 
-    ADRPT = 0x10;
-    // ADCRS 3; ADMD Low_pass_filter_mode; ADACLR disabled; ADPSIS ADRES; 
-    ADCON2 = 0x34;
-    // ADCALC Filtered value vs setpoint; ADTMD enabled; ADSOI ADGO not cleared; 
-    ADCON3 = 0x57;
-    // ADACT TMR0; 
-    ADACT = 0x02;
-    // ADCS FOSC/64; 
-    ADCLK = 0x1F;
-    // ADGO stop; ADFM right; ADON enabled; ADCONT disabled; ADCS FOSC/ADCLK; 
-    ADCON0 = 0x84;
 }
 
 void ADCC_StartConversion(adcc_channel_t channel)
@@ -386,7 +300,6 @@ void ADCC_ThresholdISR(void)
 {
     // Clear the ADCC Threshold interrupt flag
     PIR1bits.ADTIF = 0;
-    adcReadyFlag = true;
 
     if (ADCC_ADTI_InterruptHandler)
         ADCC_ADTI_InterruptHandler();

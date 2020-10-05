@@ -15,11 +15,11 @@
     For individual peripheral handlers please see the peripheral driver for
     all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F47Q10
         Driver Version    :  2.03
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above or later
+        Compiler          :  XC8 2.30 and above or later
         MPLAB 	          :  MPLAB X 5.40
 */
 

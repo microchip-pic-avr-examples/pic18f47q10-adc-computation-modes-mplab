@@ -1,9 +1,9 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# ADC with Computational Modes
+# Usage of PIC18-Q10 family 10-bit ADCC Computation modes for real-time sensing applications
 
-The PIC18FxxQ10 family of devices are equipped with a 10-bit ADC with Computation (ADCC) automating Capacitive Voltage Divider (CVD) techniques for advanced touch sensing, averaging, filtering, oversampling and performing automatic threshold comparisons.
+The PIC18-Q10 family of devices are equipped with a 10-bit ADC with Computation (ADCC) automating Capacitive Voltage Divider (CVD) techniques for advanced touch sensing, averaging, filtering, oversampling and performing automatic threshold comparisons.
 
 ### Demonstration Video 
 
@@ -27,7 +27,7 @@ The PIC18F47Q10 MCU is used in this demo along with curiosity HPC board and USB-
 
 This demo demonstrates the usage of ADCC module with different computation modes such as basic, average, burst average and low pass filter mode for sensing applications.
 
-The basic mode is considered as ‘legacy’ mode since it does not use the computation features, like a typical ADC module available in many PIC16 and PIC18 devices.
+The basic mode is considered as ‘legacy' mode since it does not use the computation features, like a typical ADC module available in many PIC16 and PIC18 devices.
 
 In average mode, the ADCC module accumulates one sample for each auto conversion trigger. The ADCC module accumulates a certain number of samples (depending upon ADRPT value) and computes average of the accumulated value.
 
@@ -441,5 +441,5 @@ In the above diagrams, the waveform in yellow is the raw ADRES value and wavefor
 
 ## Conclusion 
 
-The demo provides a code example, which demonstrates the usage of PIC18FxxQ10 MCUs ADCC module and its advanced computation modes. The advanced ADCC module replaces common firmware tasks for average and filtering implementation with the hardware solution and completely avoids the firmware overhead. It performs advanced computations and filtering of data in hardware without any intervention of CPU, therefore reduces design efforts and improves system response.
+The demo provides a code example, which demonstrates the usage of PIC18-Q10 MCUs ADCC module and its advanced computation modes. The advanced ADCC module replaces common firmware tasks for average and filtering implementation with the hardware solution and completely avoids the firmware overhead. It performs advanced computations and filtering of data in hardware without any intervention of CPU, therefore reduces design efforts and improves system response.
 

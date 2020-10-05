@@ -13,11 +13,11 @@
   @Description
     This header file provides APIs for driver for ADCC.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F47Q10
         Driver Version    :  2.1.4
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above
+        Compiler          :  XC8 2.30 and above
         MPLAB             :  MPLAB X 5.40
 */
 
@@ -54,7 +54,7 @@
 #include <xc.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include "eusart1.h"
+
 #ifdef __cplusplus  // Provide C++ Compatibility
 
     extern "C" {
@@ -64,7 +64,7 @@
 /**
   Section: Data Types Definitions
 */
-extern volatile bool adcReadyFlag;
+
 /**
  *  result size of an A/D conversion
  */
@@ -126,10 +126,6 @@ typedef enum
     </code>
 */
 void ADCC_Initialize(void);
-void ADCC_Initialize_BasicMode(void);
-void ADCC_Initialize_AverageMode(void);
-void ADCC_Initialize_BurstAverageMode(void);
-void ADCC_Initialize_LowPassFilterMode(void);
 
 /**
   @Summary

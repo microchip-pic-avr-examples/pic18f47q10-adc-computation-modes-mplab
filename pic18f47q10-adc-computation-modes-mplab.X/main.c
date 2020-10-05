@@ -13,7 +13,7 @@
   Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F47Q10
         Driver Version    :  2.00
 */
@@ -66,7 +66,9 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
+    ADCC_SetADTIInterruptHandler(ADCUserInterrupt);
+    TMR4_SetInterruptHandler(TMR4UserInterrupt);
+ 
     while (1)
     {
         // Add your application code

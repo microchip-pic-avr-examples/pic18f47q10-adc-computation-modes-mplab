@@ -13,11 +13,11 @@
   @Description
     This source file provides APIs for TMR4.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.3
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC18F47Q10
         Driver Version    :  2.11
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above 
+        Compiler          :  XC8 2.30 and above 
         MPLAB 	          :  MPLAB X 5.40
 */
 
@@ -50,7 +50,7 @@
 
 #include <xc.h>
 #include "tmr4.h"
-#include "pin_manager.h"
+
 /**
   Section: Global Variables Definitions
 */
@@ -182,9 +182,6 @@ void TMR4_SetInterruptHandler(void (* InterruptHandler)(void)){
 void TMR4_DefaultInterruptHandler(void){
     // add your TMR4 interrupt custom code
     // or set custom function using TMR4_SetInterruptHandler()
-    if(RC5_GetValue()) {
-        count++;
-    }
 }
 
 /**

@@ -5,9 +5,9 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-adc-computation-modes-mplab",
         "version": "1.0.0",
-        "displayName": "ADC With Computational Modes",
+        "displayName": "Usage of PIC18-Q10 family 10-bit ADCC Computation modes for real-time sensing applications",
         "projectName": "pic18f47q10-adc-computation-modes-mplab",
-        "shortDescription": "Microchip offers a 10-bit ADCC module in PIC18 Q10 family microcontrollers. This example highlights the basic, average, burst average and low-pass filter computation modes of ADC using PIC18F47Q10 MCU and Curiosity High Pin Count development board.",
+        "shortDescription": "Microchip offers a 10-bit ADCC module in PIC18-Q10 family microcontrollers. This example highlights the basic, average, burst average and low-pass filter computation modes of ADC using PIC18F47Q10 MCU and Curiosity High Pin Count development board.",
         "ide": {
             "name": "MPLAB X IDE",
             "semverRange": ">=5.40"
