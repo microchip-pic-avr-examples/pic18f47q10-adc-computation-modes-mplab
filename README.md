@@ -176,10 +176,34 @@ Make sure that the latest software libraries are installed. The demo/example use
  Pre-configured data streamer file is available with the firmware package. The below steps given for data visualizer configuration use these files to prepare the setup.
 
 * Configure the serial port for communication with the Curiosity High Pin Count (HPC) Development Board.
-* Set the baud rate to 230400, parity to none and stop bits to 1.
+* Set the baud rate to 115200, parity to none and stop bits to 1.
 * Ensure the DTR option is checked and both RTS and Open Terminal options are unchecked.
+
+<p align="center">
+  <img width=750 height=auto src="images/SerialPort.png">
+  <br><strong>Serial Port Control Panel<br>
+</p>
+
 * Configure data streamer for interfacing Oscilloscope window with the serial port control panel. Data streamer configuration **(data-streamer-config.txt)** file is available in example firmware folder.
+
+<p align="center">
+  <img width=750 height=auto src="images/DataStreamer.jpg">
+  <br><strong>Data Stream Control Panel<br>
+</p>
+
+* Data Streamer window shown after load the data-streamer-config.txt file as below.
+
+<p align="center">
+  <img width=750 height=auto src="images/DataStreamerWindow.png">
+  <br><strong>Data Stream Control Panel<br>
+</p>
+
 * Configure Oscilloscope module for visualize the data values in real-time.
+
+<p align="center">
+  <img width=750 height=auto src="images/OscilloscopeDS.png">
+  <br><strong>Oscilloscope Panel<br>
+</p>
 
   **NOTE**: Refer Data Visualizer user guide for more information.
 
@@ -405,7 +429,7 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
   * Connect ADRES to channel 1 and ADFLTR to channel 2 of the oscilloscope
  
 <p align="center">
-  <img width=500 height=auto src="images/Oscilloscope.png">
+  <img width=400 height=auto src="images/Oscilloscope.png">
   <br><strong><br>
 </p> 
 
