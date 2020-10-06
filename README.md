@@ -205,7 +205,7 @@ Make sure that the latest software libraries are installed. The demo/example use
   <br><strong>Oscilloscope Panel<br>
 </p>
 
-  **NOTE**: Refer Data Visualizer user guide for more information.
+  **NOTE**: Refer [Data Visualizer](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42730-Data-Visualizer_UserGuide.pdf) user guide for more information.
 
 ## MCC Configuration
 
@@ -371,9 +371,15 @@ Switch S2 is connected to pin RC5, which is used as input source to timer4 (HLT)
 * Connect the hardware and prepare demonstrator setup as per the instructions provided in Demonstration setup section.
 * Configure Data Visualizer as per the instructions provided in Data Visualizer Configuration section.
 * Click Serial Port Control Panel Connect button.
+
+<p align="center">
+  <img width=400 height=auto src="images/DVSetup.png">
+  <br><strong><br>
+</p>
+
 * Using push button (SW0) on the Curiosity High Pin Count (HPC) Development Board to select appropriate ADC Computation mode. 
-* Use on-board potentiometer for adjust the ADC input for demonstration. 
-* Open the terminal (any Terminal or Terminal in Data Visualizer) in PC and observe the conversion data on terminal window.
+* Use on-board potentiometer for adjusting the ADC input for demonstration. 
+* Open the terminal window of Data Visualizer and observe the conversion data on terminal window.
 * By default, the ADCC is configured in basic mode. No computational feature is enabled and the raw data is displayed in the terminal window.
 
 <p align="center">
