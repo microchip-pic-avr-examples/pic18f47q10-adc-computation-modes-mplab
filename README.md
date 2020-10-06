@@ -191,21 +191,21 @@ Make sure that the latest software libraries are installed. The demo/example use
   <br><strong>Data Stream Control Panel<br>
 </p>
 
-* Data Streamer window shown after load the data-streamer-config.txt file as below.
+* After loading the data-streamer-config.txt file, the Data Streamer window appears as shown below.
 
 <p align="center">
   <img width=750 height=auto src="images/DataStreamerWindow.png">
   <br><strong>Data Stream Control Panel<br>
 </p>
 
-* Configure Oscilloscope module for visualize the data values in real-time.
+* Configure Oscilloscope module for visualizing the data values in real-time.
 
 <p align="center">
   <img width=750 height=auto src="images/OscilloscopeDS.png">
   <br><strong>Oscilloscope Panel<br>
 </p>
 
-  **NOTE**: Refer [Data Visualizer](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42730-Data-Visualizer_UserGuide.pdf) user guide for more information.
+  **NOTE**: Refer [Data Visualizer](http://www.microchip.com/DS40001903) user guide for more information.
 
 ## MCC Configuration
 
