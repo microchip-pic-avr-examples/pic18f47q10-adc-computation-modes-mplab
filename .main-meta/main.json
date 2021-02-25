@@ -39,6 +39,7 @@
         "author": "Microchip",
         "subcategories": [
             "MCC",
+			"Sensor Nodes",
             [
                "Peripherals", "TMR1"
             ],
