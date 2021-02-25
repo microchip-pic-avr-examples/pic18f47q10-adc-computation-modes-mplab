@@ -1,13 +1,13 @@
 <!-- Please do not change this logo with link -->
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Usage of PIC18-Q10 family 10-bit ADCC Computation modes for real-time sensing applications
+# Usage of PIC18-Q10 family 10-bit ADCC Computation modes for real-time sensing applications - MPLAB X Project
 
 The PIC18-Q10 family of devices are equipped with a 10-bit ADC with Computation (ADCC) automating Capacitive Voltage Divider (CVD) techniques for advanced touch sensing, averaging, filtering, oversampling and performing automatic threshold comparisons.
 
 ### Demonstration Video 
 
-[![Demo Video](https://img.youtube.com/vi/rjd50szezx4/0.jpg)](https://youtu.be/rjd50szezx4)
+<br><a href="https://youtu.be/rjd50szezx4" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
 
 ### Features of ADCC 
 
