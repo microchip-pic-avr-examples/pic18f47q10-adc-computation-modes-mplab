@@ -57,11 +57,10 @@
             "TMR1","ADCC","HLT","USART"
         ],
         "keywords": [
-            "PIC18F47Q10",
-			"Timer",
+			"16 Timer",
 			"Data Visualizer",
-			"Average",
 			"Burst Average",
+			"Computation Modes",
 			"Low Pass Filter",
 			"Curiosity HPC Board"
         ],
