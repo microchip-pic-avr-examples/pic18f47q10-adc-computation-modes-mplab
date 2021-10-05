@@ -60,10 +60,9 @@
 			"Data Visualizer",
 			"Average",
 			"Curiosity",
-			"Switch Debounce",
-			"Wired Communication",
-			"Computation Modes",
-			"Low Pass Filter"
+			"Wired",
+			"Computation Mode",
+			"Filter"
         ],
 		"additionalData": {
 			"longDescription": {
