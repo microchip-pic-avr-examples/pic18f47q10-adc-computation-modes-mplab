@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\pic18f47q10-adc-computation-modes-mplab-mcc.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>131072</length>
+      <used>4678</used>
+      <free>126394</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>3359</length>
+      <used>166</used>
+      <free>3193</free>
+    </memory>
+  </executable>
+</project>

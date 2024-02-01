@@ -4,15 +4,13 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>pic18f47q10-adc-computation-modes-mplab</name>
-            <creation-uuid>10a4f8b9-8dc7-4758-9cfb-b0a5c25572e3</creation-uuid>
+            <creation-uuid>ea4b9071-95cc-4c0d-a5eb-63354cfacd4e</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>.</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>free</name>
